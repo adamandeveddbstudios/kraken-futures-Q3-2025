@@ -22,17 +22,10 @@ function init() {
 
 function animate() {
   tl1.set(["#main"], { autoAlpha: 1, force3D: true });
-  // tl1.set(["#cta"], { force3D: false, rotation: 0.001 });
 
   tl1.to("#gradient", 6, {x: "50px", ease: Power1.easeInOut, transformOrigin: "center right"})
   .to("#gradient", 6, {x: "0px", ease: Power1.easeInOut})
   tl1.staggerTo(['.chart'], 0.7,{ scale: 1, autoAlpha:1,  ease: "back.out(1.1)" }, 1.5, 0);
-
-
-  // tl1.to("#text-1", 0.5, { autoAlpha: 0, ease: "power1.in" }, 3);
-  // tl1.to("#text-2", 0.5, { autoAlpha: 1, ease: "power1.in" }, 3.8);
-  // tl1.to("#cta", 0.5, { autoAlpha: 1, ease: "power1.in" }, "+=1");
-  // tl1.to("#car", 4, { scale: 1, ease: "power1.in", force3D: true }, 0);
 }
 
 function randomInt(min, max) {
@@ -60,13 +53,6 @@ function setRollover() {
     .addEventListener("mouseout", default_out, false);
 }
 
-// function default_over(event) {
-//   TweenMax.to(["#cta"], 0.3, { transform: "translate3d(0, 0, 1px) scale(1.1)", ease: Power1.easeOut, delay: 0 });
-// }
-
-// function default_out(event) {
-//   TweenMax.to(["#cta"], 0.3, { transform: "translate3d(0, 0, 1px) scale(1)", ease: Power1.easeOut, delay: 0 });
-// }
 
 function default_over() {
   TweenMax.to('#cta', 0.3, { scale: 1.1, transformOrigin: '10% 70%', ease: Power2.easeOutIn })
