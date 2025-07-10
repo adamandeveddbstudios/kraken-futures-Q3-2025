@@ -24,7 +24,9 @@ function animate() {
   tl1.set(["#main"], { autoAlpha: 1, force3D: true });
   // tl1.set(["#cta"], { force3D: false, rotation: 0.001 });
 
-  tl1.staggerTo(['.chart'], 0.5,{ scale: 1, autoAlpha:1,  ease: "back.out(1.1)" }, 1, 0);
+  tl1.to("#gradient", 6, {x: "50px", ease: Power1.easeInOut, transformOrigin: "center right"})
+  .to("#gradient", 6, {x: "0px", ease: Power1.easeInOut})
+  tl1.staggerTo(['.chart'], 0.7,{ scale: 1, autoAlpha:1,  ease: "back.out(1.1)" }, 1.5, 0);
 
 
   // tl1.to("#text-1", 0.5, { autoAlpha: 0, ease: "power1.in" }, 3);

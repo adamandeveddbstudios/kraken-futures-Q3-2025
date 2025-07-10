@@ -24,15 +24,10 @@ function animate() {
   tl1.set(["#main"], { autoAlpha: 1, force3D: true });
   // tl1.set(["#cta"], { force3D: false, rotation: 0.001 });
 
-  tl1.to("#gradient", 5, {
-  scale: 0.8, // slight zoom in
-  repeat: -1, // infinite loop
-  yoyo: true, // zoom out after zoom in
-  ease: Power1.easeInOut,
-  transformOrigin: "center right" // ensures zoom from center
-});
-
-  tl1.staggerTo(['.chart'], 0.5,{ scale: 1, autoAlpha:1, left: "0px", ease: "back.out(1.5)" }, 1, 0);
+  tl1.to("#gradient", 6, {x: "50px", ease: Power1.easeInOut, transformOrigin: "center right"})
+  .to("#gradient", 6, {x: "0px", ease: Power1.easeInOut})
+  
+  .staggerTo(['.chart'], 0.7,{ scale: 1, autoAlpha:1, left: "0px", ease: "back.out(1.5)" }, 1.5, 0);
 
 }
 
