@@ -24,8 +24,8 @@ sup, sub {
 }
 
 html, body {
-  width:728px;
-  height:90px;
+  width:320px;
+  height:50px;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,8 +35,8 @@ html, body {
   position:absolute;
   left:0px;
   top:0px;
-  width:728px;
-  height:90px;
+  width:320px;
+  height:50px;
   background-color: #000;
   border: solid 1px #000000;
 }
@@ -47,21 +47,21 @@ html, body {
   position:absolute;
   left: 0px;
   top: 0px;
-  width:728px;
+  width:320px;
   height: auto;
 }
 
 .charts{
   position: absolute;
-  left: -140px;
-  top: -41px;
-  width: 728px;
+  left: 213px;
+  top: 0px;
+  width: 320px;
 }
 .charts img{
+  width: 95px;
   position: absolute;
-  left: 379px;
-  top: 41px;
-  width: 137px;
+  top: 0px;
+  left: 0px;
 }
 .copy{
   font-family: 'kraken-regular';
@@ -71,10 +71,10 @@ html, body {
 
 }
 .copy1{
-  font-size: 32px;
-  letter-spacing: -0.6px;
-  top: 3px;
-  left: 12px;
+  font-size: 28.8px;
+  letter-spacing: -0.4px;
+  line-height: 27px;
+  top: 51px;
   background: #F0EFFF;
   background: linear-gradient(to top, #F0EFFF 22%, #7132F5 100%);
   -webkit-background-clip: text;
@@ -82,17 +82,16 @@ html, body {
 
 }
 .copy2{
-  font-size: 14px;
-  line-height: 18px;
-  top: 43px;
+  font-size: 13px;
+  line-height: 16px;
+  top: 114px;
   color: #F0EFFF;
-  left: 13px;
 }
 .copy3{
-  top: 51px;
-  left: 526px;
-  font-size: 8px;
-  line-height: 10px;
+  top: 28.5px;
+  left: 9px;
+  font-size: 5.6px;
+  line-height: 8px;
   color: #F0EFFF;
 }
 
@@ -101,22 +100,22 @@ html, body {
   display: inline-block;
   transform-origin: center center;
   background-color: #F0EFFF;
-  font-size: 10.28px;
-  line-height: 21px;
-  left: 439px;
-  top: 57px;
+  font-size: 6.1px;
+  left: 111px;
   position: absolute;
-  height: 21px;
-  width: 77px;
+  top: 10.5px;
+  height: 12.5px;
+  width: 45px;
   border-radius: 50px;
   text-align: center;
+  line-height: 12.5px;
 }
 
 #default_exit{
   top:0px;
   left:0px;
-  width:728px;
-  height:90px;
+  width:320px;
+  height:50px;
 }
 
 .btn{
