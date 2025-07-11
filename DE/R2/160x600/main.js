@@ -23,7 +23,7 @@ function init() {
 function animate() {
   tl1.set(["#main"], { autoAlpha: 1, force3D: true });
 
-  tl1.to("#gradient", 6, {y: "70px", ease: Power1.easeInOut, transformOrigin: "center right"})
+  tl1.to("#gradient", 6, {y: "-70px", ease: Power1.easeInOut, transformOrigin: "center right"})
   .to("#gradient", 6, {y: "0px", ease: Power1.easeInOut})
   tl1.staggerTo(['.chart'], 0.7,{ scale: 1, autoAlpha:1,  ease: "back.out(1.1)" }, 1.5, 0);
 }
