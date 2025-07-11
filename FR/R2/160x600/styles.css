@@ -1,0 +1,134 @@
+
+@font-face {
+  font-family: 'kraken-regular';
+  src: url('fonts/subset-KrakenBrand-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  height: auto;
+}
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:160px;
+  height:600px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:160px;
+  height:600px;
+  background-color: #000;
+  border: solid 1px #000000;
+}
+#main {
+  overflow:hidden;
+}
+.full-width {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 160px;
+  height: auto;
+}
+
+.charts{
+  position: absolute;
+  right: 136px;
+  top: 283px;
+  width: 160px;
+}
+.charts img{
+  width: 249px;
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+.copy{
+  font-family: 'kraken-regular';
+  color: #fff;
+  position: absolute;
+  left: 12px;
+  width: 100%;
+}
+.copy1{
+  font-size: 22.2px;
+  letter-spacing: -0.5px;
+  line-height: 21px;
+  top: 63px;
+  left: 11px;
+  background: #F0EFFF;
+  background: linear-gradient(to top, #F0EFFF 22%, #7132F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 2px;
+}
+.copy2{
+  font-size: 12px;
+  line-height: 14px;
+  top: 176px;
+  left: 12px;
+  color: #F0EFFF;
+}
+.copy3{
+  top: 498px;
+  left: 21px;
+  font-size: 8px;
+  line-height: 10px;
+  color: #F0EFFF;
+}
+
+#cta{
+  font-family: 'kraken-regular';
+  display: inline-block;
+  transform-origin: center center;
+  background-color: #F0EFFF;
+  font-size: 9.61px;
+  line-height: 21px;
+  left: 12px;
+  position: absolute;
+  top: 228px;
+  height: 21px;
+  width: 64px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+#default_exit{
+  top:0px;
+  left:0px;
+  width: 160px;
+  height: 600px;
+}
+
+.btn{
+  position: absolute;
+  top:0px;
+  left:0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus{outline: 0}
+
+::-moz-focus-inner{border: 0}
