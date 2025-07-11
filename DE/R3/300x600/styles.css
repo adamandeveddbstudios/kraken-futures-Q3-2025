@@ -1,0 +1,133 @@
+
+@font-face {
+  font-family: 'kraken-regular';
+  src: url('fonts/subset-KrakenBrand-Regular.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  height: auto;
+}
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:300px;
+  height:600px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#main,
+#background {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:300px;
+  height:600px;
+  background-color: #000;
+  border: solid 1px #000000;
+}
+#main {
+  overflow:hidden;
+}
+.full-width {
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  width: 300px;
+  height: auto;
+}
+
+.charts{
+  position: absolute;
+  left: 11px;
+  top: 316px;
+  width: 300px;
+}
+.charts img{
+  width: 279px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.copy{
+  font-family: 'kraken-regular';
+  color: #fff;
+  position: absolute;
+  left: 12px;
+  width: 100%;
+}
+.copy1{
+  font-size: 36px;
+  letter-spacing: -0.7px;
+  line-height: 35px;
+  top: 74px;
+  left: 34px;
+  background: #F0EFFF;
+  background: linear-gradient(to top, #F0EFFF 22%, #7132F5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.copy2{
+  font-size: 16.09px;
+  line-height: 21.5px;
+  top: 197px;
+  color: #F0EFFF;
+  left: 34px;
+}
+.copy3{
+  top: 551px;
+  left: 29px;
+  font-size: 8px;
+  line-height: 10px;
+  color: #F0EFFF;
+}
+
+#cta{
+  font-family: 'kraken-regular';
+  display: inline-block;
+  transform-origin: center center;
+  background-color: #F0EFFF;
+  font-size: 15.37px;
+  left: 35px;
+  position: absolute;
+  top: 257px;
+  height: 32px;
+  width: 113px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 32px;
+}
+
+#default_exit{
+  top:0px;
+  left:0px;
+  width: 300px;
+  height: 600px;
+}
+
+.btn{
+  position: absolute;
+  top:0px;
+  left:0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus{outline: 0}
+
+::-moz-focus-inner{border: 0}
